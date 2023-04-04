@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/cy",
+    "types": ["cypress"]
+  },
+  "files": ["./cypress.config.ts", "src/polyfills.ts"],
+  "include": ["cypress/**/*.cy.ts", "cypress/**/*.ts", "./cypress.config.ts"],
+  "exclude": ["src/**/*.spec.ts"]
+}
