@@ -3,7 +3,12 @@
     "browser": true,
     "es6": true
   },
-  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@angular-eslint/recommended",
+    "plugin:@angular-eslint/template/process-inline-templates"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "sourceType": "module",
@@ -11,10 +16,21 @@
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
+    "no-multiple-empty-lines": ["error", {"max": 1}],
     "semi": ["error", "always"],
+    "linebreak-style": ["error", "unix"],
     "quotes": [2, "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
-    "indent": ["error", 2],
-    "no-console": "warn",
-    "@typescript-eslint/no-empty-function": "off"
-  }
+    "no-console": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.component.html"],
+      "parser": "@angular-eslint/template-parser",
+      "plugins": ["@angular-eslint/template"],
+      "rules": {
+
+      }
+    }
+  ],
+  "ignorePatterns": ["index.html"]
 }
