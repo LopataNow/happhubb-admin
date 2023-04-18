@@ -32,7 +32,7 @@ export class AuthService {
     window.setTimeout(() => {
       localStorage.setItem('access_token', 'token');
       this.token.next('token');
-      this.router.navigate(['']);
+      this.router.navigate(['dashboard']);
     } , 100);
   }
 

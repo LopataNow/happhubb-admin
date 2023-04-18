@@ -19,12 +19,6 @@ export class CanActiveGuard implements CanActivate {
       });
       return false;
     }
-
-    if(this.router.url === '/login') {
-      this.router.navigate([''], {
-        skipLocationChange: true
-      });
-    }
     
     return true;
   }
