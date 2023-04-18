@@ -1,1 +1,9 @@
-<p>login works!</p>
+<div class="form-container">
+    <mat-card class="form-card">
+        <div *ngIf="isUserStatusPeeding()" class="login-spimner">
+            <mat-spinner></mat-spinner>
+        </div>
+        <app-register-first-form *ngIf="isUserStatusExists()"></app-register-first-form>
+        <app-login-form *ngIf="isUserStatusNotExists()"></app-login-form>
+    </mat-card>
+</div>

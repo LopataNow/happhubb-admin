@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CanActiveGuard } from 'src/app/core/guards/can-active.guard';
 
 const routes: Routes = [
   {
@@ -9,11 +10,13 @@ const routes: Routes = [
   },
   { 
     path: 'dashboard', 
-    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) 
+    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule),
+    canActivate: [CanActiveGuard],
   },
   { 
     path: 'proiects', 
-    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) 
+    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule),
+    canActivate: [CanActiveGuard],
   },
   { 
     path: 'login', 
@@ -21,7 +24,8 @@ const routes: Routes = [
   },
   {
     path: 'projects',
-    loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule)
+    loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule),
+    canActivate: [CanActiveGuard] 
   },
 ];
 

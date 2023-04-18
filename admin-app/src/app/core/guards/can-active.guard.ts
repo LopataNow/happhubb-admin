@@ -14,9 +14,18 @@ export class CanActiveGuard implements CanActivate {
   canActivate(): boolean {
     if (!this.authService.isAuthenticated()) {
       //TODO: Add navigate to login page
-      //this.router.navigate(['login']);
+      this.router.navigate(['login'], {
+        skipLocationChange: true
+      });
       return false;
     }
+
+    if(this.router.url === '/login') {
+      this.router.navigate([''], {
+        skipLocationChange: true
+      });
+    }
+    
     return true;
   }
 }

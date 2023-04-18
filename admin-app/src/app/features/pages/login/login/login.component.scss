@@ -1,0 +1,36 @@
+
+
+
+.example-full-width{
+    
+}
+
+.login-spimner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.example-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-card{
+    width: 260px;
+    padding: 30px;
+}
+
+.form-container{
+    background: white;
+    height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
