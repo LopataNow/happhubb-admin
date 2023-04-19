@@ -1,11 +1,16 @@
 .project-posts-container{
     margin: 20px;
-    padding: 20px;
 }
 
 .project-posts-akcions{
-    padding: 10px;
+    padding: 4px;
     display: flex;
     flex-direction: row;
     justify-content: right;
+}
+
+.project-posts-route{
+    margin: 6px;
+    margin-left: 20px;
+    color: blue;
 }
