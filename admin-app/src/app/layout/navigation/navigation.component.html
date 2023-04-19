@@ -10,7 +10,8 @@
           *ngIf="isHandset$ | async">
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
-        <span  i18n>Admin Panel</span>
+        <span>Admin Panel</span>
+        <span class="spacer"></span>
         <button mat-icon-button [matMenuTriggerFor]="menu"><mat-icon>add</mat-icon></button>
         <mat-menu #menu="matMenu">
           <button mat-menu-item>Add New Project</button>

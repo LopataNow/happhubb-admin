@@ -13,7 +13,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatSidenavModule,
     MatMenuModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
   ]
 })
 export class LayoutMateralModule { }

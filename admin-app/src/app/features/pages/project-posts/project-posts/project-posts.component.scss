@@ -3,14 +3,16 @@
 }
 
 .project-posts-akcions{
-    padding: 4px;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
+    margin-right: 4px;
+    margin-left: auto;
 }
 
 .project-posts-route{
     margin: 6px;
     margin-left: 20px;
     color: blue;
+}
+
+.post-projects-table{
+    margin-top: 20px;
 }
