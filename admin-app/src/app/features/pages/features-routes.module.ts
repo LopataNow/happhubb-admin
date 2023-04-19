@@ -15,7 +15,7 @@ const routes: Routes = [
   },
   { 
     path: 'projects', 
-    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule),
+    loadChildren: () => import('./project-posts/project-posts.module').then(m => m.ProjectsModule),
     canActivate: [CanActiveGuard],
   },
   { 
