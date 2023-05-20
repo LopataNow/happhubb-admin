@@ -16,11 +16,11 @@ const ELEMENT_DATA: PeriodicElement[] = [
 ];
 
 @Component({
-  selector: 'app-project-posts',
-  templateUrl: './project-posts.component.html',
-  styleUrls: ['./project-posts.component.scss']
+  selector: 'app-content-projects',
+  templateUrl: './content-projects.component.html',
+  styleUrls: ['./content-projects.component.scss']
 })
-export class ProjectPostsComponent {
+export class ContentProjectsComponent {
   displayedColumns: string[] = ['tittle', 'tags', 'created', 'akcion'];
   dataSource = ELEMENT_DATA;
 

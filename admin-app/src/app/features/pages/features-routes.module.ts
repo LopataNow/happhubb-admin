@@ -15,10 +15,10 @@ const routes: Routes = [
   },
   { 
     path: 'projects', 
-    loadChildren: () => import('./project-posts/project-posts.module').then(m => m.ProjectsModule),
+    loadChildren: () => import('./content/content.module').then(m => m.ContentModule),
     canActivate: [CanActiveGuard],
   },
-  { 
+  {
     path: 'login', 
     loadChildren: () => import('./login/login.module').then(m => m.LoginModule) 
   },

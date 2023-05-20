@@ -14,4 +14,4 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatExpansionModule
   ]
 })
-export class ProjectPostsMaterialModule { }
+export class ContentMaterialModule { }
